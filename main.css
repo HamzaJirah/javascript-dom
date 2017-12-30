@@ -3,6 +3,8 @@ body{
 }
 
 #content {
+  width: 400px;
+  padding: 20px;
   margin: 0 auto;
   background: #fff;
   font-family: verdana;
@@ -16,7 +18,15 @@ body{
   -webkit-transition: max-height 07s;
   -moz-transition: max-height 0.7s;
   transition: max-height 0.7s;
+}
 
+#content.open{
+  max-height: 1000px;
+
+  /*set transition up*/
+  -webkit-transition: max-height 07s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
 }
 
 #show-more {
@@ -35,12 +45,4 @@ body{
 
 #show-more:hover{
   color: aquamarine;
-}
-#content.open{
-  max-height: 1000px;
-
-  /*set transition up*/
-  -webkit-transition: max-height 07s;
-  -moz-transition: max-height 0.7s;
-  transition: max-height 0.7s;
 }
